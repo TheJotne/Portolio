@@ -20,9 +20,10 @@ body{
 
 #about{
    margin:auto;
-   width:60%;
+   max-width:40%;
    min-height:200px;
    padding-top: 5em;
+ 
 }
 #about .avatar{
     background-color: #9FB49D;
@@ -35,6 +36,7 @@ body{
 }
 #about p{
     overflow:hidden;
+    text-align: justify;
 }
 
 #about hr{
@@ -43,6 +45,9 @@ body{
 #boxes{
 
     background-color: aquamarine;
+}
+.seperator{
+    width:60%;
 }
 .box{
     float:left;
@@ -57,7 +62,8 @@ header{
     color:white;
     padding-top: 60px;
     min-height: 100px;
-    box-shadow: 0px 5px 15px gray
+    box-shadow: 0px 5px 15px gray;
+
 }
 header a{
     color:white;
@@ -102,8 +108,8 @@ a {
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.15s ease-in-out 0s;
+    transition: all 0.15s ease-in-out 0s;
   }
   
   a:hover:before {
