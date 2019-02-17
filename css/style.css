@@ -14,7 +14,7 @@ body{
     overflow: hidden;
 }
 #content{
-    min-height: 70vh;
+    min-height: 100vh;
    
 }
 
@@ -22,7 +22,7 @@ body{
    margin:auto;
    width:60%;
    min-height:200px;
-   padding-top: em;
+   padding-top: 5em;
 }
 #about .avatar{
     background-color: #9FB49D;
