@@ -77,9 +77,9 @@ header #pagename #headline:after {
  
 }
 #about .avatar{
-    background-color: #f4f4f4;
-    max-width: 400px;
-    max-height: 400px;
+    background-image: url(/img/avatar.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
     width:25vw;
     height: 25vw;
     border-radius: 50%;
@@ -113,29 +113,97 @@ header #pagename #headline:after {
 #showcase{
     margin:auto;
 }
-#showcase h2{
+.headline{
     text-align: center;
     margin-top: 10%;
     font-family: 'Maitree', serif;
     font-weight: 900;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #4F7B69;
 }
 #showcase .box{
-    margin:auto;
-    width:30vw;
-    margin-bottom: 20%;
+    margin: auto;
+    margin-left: 25%;
+    width:50vw;
+    margin-bottom: 10%;
 }
 #showcase-container{
     display:grid;
-    grid-gap: 50px 50px;
-    grid-template-columns: auto auto ;
+    grid-gap: 12em 2em;
+    grid-template-columns: 2fr 2fr ;
+    justify-items: center;
+    
 }
 #showcase-container .content-box{
+
 background-color: #f1f1f1;
-margin: 10px;
-padding: 100px;
+min-height: 100px;
+min-width: 200px;
+max-width: 450px;
+max-height: 350px;
 font-size: 30px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 text-align: center;
+object-fit: contain;
+}
+#showcase-container .content-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#showcase-container .content-box p{
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #808363;
+    font-size: 18px;
+}
+#imp_Link{
+    color: white;
+}
+#impress{
+    margin-left: 20%;
+}
+.contact{
+    margin:auto;
+}
+
+i{
+    font-size: 60px;
+    padding: 30px;
+    color: #373E40;
+}
+.icon_box{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 6%;
+}
+@media screen and (max-width: 720px) {
+#showcase .box{
+    margin-left:20%;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    header #pagename #headline{
+        font-size:5vw;
+
+    }
+    header #pagename #explanation{
+        font-size: 3vw;
+    }
+    #about p{
+        font-size: 4vw;
+    }
+    .headline{
+        font-size: 7vw;
+
+    }
+    #showcase .box{
+        margin-left:30%;
+        }
+    #showcase-container{
+        display:grid;
+        grid-gap: 12em 2em;
+        grid-template-columns: 2fr  ;
+    }
 }
